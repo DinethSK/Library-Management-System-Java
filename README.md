@@ -1,8 +1,8 @@
 # Library-Management-System-Java
 A simple, interactive command-line application built in Java to automate core university library operations. This project demonstrates foundational concepts of Object-Oriented Programming (OOP).
-## 🚀 Key Features (ප්‍රධාන කාර්යයන්)
+## 🚀 Key Features 
 
-* **Pre-loaded Catalog:** Automatically loads 50 English academic books and 20 classic Sinhala literature books upon startup.
+* **Pre-loaded Catalog:** Automatically loads 20 classic Sinhala literature books upon startup.
 * **Member Management:** Register new library users with a unique Member ID.
 * **Borrowing System:** Allows registered members to borrow books by title, updating availability status dynamically.
 * **Returning System:** Hand back borrowed books to restore their status to "Available".
@@ -10,7 +10,7 @@ A simple, interactive command-line application built in Java to automate core un
 
 ---
 
-## 🛠️ System Architecture & OOP Concepts Used (භාවිතා කළ සංකල්ප)
+## 🛠️ System Architecture & OOP Concepts Used 
 
 The system is developed using 4 core Java classes to preserve clean code modularity:
 
