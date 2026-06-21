@@ -32,7 +32,19 @@ public class Library {
         }
     }
 
-    // 4. Handle borrowing logic using Book Title and Member ID
+    // 4. View All Registered Members 
+    public void displayMembers() {
+        if (members.isEmpty()) {
+            System.out.println("No members registered in the system yet.");
+            return;
+        }
+        System.out.println("\n--- Registered Members ---");
+        for (Member member : members) {
+            System.out.println("Member ID: " + member.getMemberId() + " | Name: " + member.getName());
+        }
+    }
+
+    // 5. Handle borrowing logic using Book Title and Member ID
     public void borrowBook(String title, String memberId) {
         // Step A: Find if the user exists
         Member targetMember = null;
@@ -63,7 +75,7 @@ public class Library {
         System.out.println("Error: Book not found in library.");
     }
 
-    // 5. Handle returning logic
+    // 6. Handle returning logic
     public void returnBook(String title) {
         for (Book book : books) {
             if (book.getTitle().equalsIgnoreCase(title)) {
